@@ -1,9 +1,10 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Item : MonoBehaviour
 {
     private Spawner spawner;
     private int spawnIndex;
+    public ItemData itemData; // ItemData referans� (ScriptableObject)
     [SerializeField] private float destroyTime; // Destroy time in seconds
 
     private void Start()
@@ -21,22 +22,18 @@ public class Item : MonoBehaviour
         if (spawner != null)
         {
             spawner.MarkAsFree(spawnIndex);
+            itemData.counter++; // Increase the counter in ItemData
         }
     }
 
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player") && CompareTag("Correct"))
+        if (other.CompareTag("Player"))
         {
-            Debug.Log("Correct");
+            EventManager.TriggerEvent("ItemCollected", itemData);
             Destroy(gameObject);
         }
-        else if (other.CompareTag("Player") && CompareTag("Wrong"))
-        {
-            Debug.Log("Wrong");
-            Destroy(gameObject);
-
-        }
+        
     }
 }

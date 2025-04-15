@@ -6,6 +6,15 @@ public class EventManager : MonoBehaviour
 {
     private static Dictionary<string, Action<object>> eventDictionary = new Dictionary<string, Action<object>>();
 
+
+
+    private void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
+
+
+
     public static void StartListening(string eventName, Action<object> listener)
     {
         if (eventDictionary.TryGetValue(eventName, out var thisEvent))
