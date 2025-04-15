@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        Cursor.visible = false; // fare imlecini gizle
     }
 
     void Update()
@@ -23,6 +24,11 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (GameManager.Instance.isGameOver)
+        {
+            rb.linearVelocity = Vector2.zero; // Oyun bittiðinde hareketi durdur
+            return;
+        }
         rb.linearVelocity = movement * speed;
         ClampPosition(); // Rigidbody hareket ettikten sonra sýnýrlama
     }

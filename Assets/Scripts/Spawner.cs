@@ -22,6 +22,12 @@ public class Spawner : MonoBehaviour
     {
         timer += Time.deltaTime;
 
+        if (GameManager.Instance.isGameOver)
+        {
+            return; // Oyun bittiðinde spawn yapma
+        }
+
+
         if (timer >= spawnInterval)
         {
             Spawn();

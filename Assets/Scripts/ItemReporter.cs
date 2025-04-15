@@ -14,7 +14,7 @@ public class ItemReporter : MonoBehaviour
 
     private void Start()
     {
-
+        Cursor.visible = true;
         if (GameManager.Instance.score >= scoreToWin)
         {
             Result.text = "You Win!";

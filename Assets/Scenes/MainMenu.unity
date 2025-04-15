@@ -1096,6 +1096,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e6e186bcab796a743b5545080eb62605, type: 2}
   - {fileID: 11400000, guid: 037baa0573ab2dc4b9a6a53c5a72c846, type: 2}
   score: 0
+  timer: {fileID: 0}
+  firstTime: 3
+  isGameOver: 0
 --- !u!4 &1392001358
 Transform:
   m_ObjectHideFlags: 0
