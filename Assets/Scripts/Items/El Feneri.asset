@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5be701db0805e504ba1f4819b7d79a95, type: 3}
   m_Name: El Feneri
   m_EditorClassIdentifier: 
-  counter: 0
-  itemPoints: 300
+  counter: 1
+  itemPoints: 250

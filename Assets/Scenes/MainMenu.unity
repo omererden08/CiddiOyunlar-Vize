@@ -1053,67 +1053,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1392001356
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1392001358}
-  - component: {fileID: 1392001357}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1392001357
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1392001356}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17740219a4dc9d94195da9e2b2ef40b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  allItems:
-  - {fileID: 11400000, guid: bc2fea5ee8d61ff4f97025c991323761, type: 2}
-  - {fileID: 11400000, guid: 5f337e8831d9b6d4ab57e5ffb5b3ec3d, type: 2}
-  - {fileID: 11400000, guid: baf5942063906584b9bc581c04a7cdb1, type: 2}
-  - {fileID: 11400000, guid: eaeca49f254fcb04fb9a67b1c87b4aff, type: 2}
-  - {fileID: 11400000, guid: 3906a6fc6aa9b3e48a5b8a4413cf569c, type: 2}
-  - {fileID: 11400000, guid: 73ac103fc1b296c4294d977d8e23b429, type: 2}
-  - {fileID: 11400000, guid: c3bc7ecf6e76dfa4f9126cbfc6c2b1c4, type: 2}
-  - {fileID: 11400000, guid: f6fd5ca623b45734ea916fa56d88defc, type: 2}
-  - {fileID: 11400000, guid: d3e779a642e118647bc608a9c1c1bf4c, type: 2}
-  - {fileID: 11400000, guid: 670b2ecc8411a474baa70daf61c180d9, type: 2}
-  - {fileID: 11400000, guid: e6e186bcab796a743b5545080eb62605, type: 2}
-  - {fileID: 11400000, guid: 037baa0573ab2dc4b9a6a53c5a72c846, type: 2}
-  score: 0
-  timer: {fileID: 0}
-  firstTime: 3
-  isGameOver: 0
---- !u!4 &1392001358
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1392001356}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1532888208
 GameObject:
   m_ObjectHideFlags: 0
@@ -1439,6 +1378,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FadeCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 4702637592507271918, guid: d5a30a5e891b09645ad56ae02143b79a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5063201710581895957, guid: d5a30a5e891b09645ad56ae02143b79a, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1535,6 +1478,5 @@ SceneRoots:
   - {fileID: 385051463}
   - {fileID: 1883870395}
   - {fileID: 963112377}
-  - {fileID: 1392001358}
   - {fileID: 3715392554143199717}
   - {fileID: 1047710461}

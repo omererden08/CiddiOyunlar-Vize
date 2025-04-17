@@ -12,9 +12,9 @@ public class Buttons : MonoBehaviour
     } 
     public void Restart()
     {
-        FadeManager.Instance.FadeToScene("Gameplay");
-        GameManager.Instance.ResetCounters();
         GameManager.Instance.isGameOver = false;
+        GameManager.Instance.ResetCounters();
+        FadeManager.Instance.FadeToScene("Gameplay");
     } 
     public void Quit()
     {

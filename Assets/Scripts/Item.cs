@@ -22,16 +22,15 @@ public class Item : MonoBehaviour
         if (spawner != null)
         {
             spawner.MarkAsFree(spawnIndex);
-            itemData.counter++; // Increase the counter in ItemData
         }
     }
-
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
             EventManager.TriggerEvent("ItemCollected", itemData);
+            itemData.counter++;
             Destroy(gameObject);
         }
         

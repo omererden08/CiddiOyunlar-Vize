@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     public ItemData[] allItems;
     public int score = 0;
     //timer
-    [SerializeField] private TextMeshProUGUI timer;
+    private TextMeshProUGUI timer;
     [SerializeField] private float firstTime;
     private float remainingTime;
     public bool isGameOver = false;
@@ -81,6 +81,8 @@ public class GameManager : MonoBehaviour
             item.counter = 0;
         }
         score = 0;
+        isEndingTriggered = false;
+
     }
 
     private void Timer()
