@@ -3598,7 +3598,7 @@ MonoBehaviour:
   - {fileID: 372979423}
   - {fileID: 1040848553}
   - {fileID: 1372312924}
-  scoreToWin: 100
+  scoreToWin: 2000
   Result: {fileID: 1060232673}
 --- !u!4 &1636640102
 Transform:
