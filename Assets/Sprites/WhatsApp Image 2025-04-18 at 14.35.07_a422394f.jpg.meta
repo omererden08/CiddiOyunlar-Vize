@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 92e1ef60ff028e04888a77c0a095cde6
+guid: 90cfe53aa3454084ea2b3222acd46cad
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3804723247071707498
-    second: "biti\u015F_0"
+      213: -5601587702787866306
+    second: WhatsApp Image 2025-04-18 at 14.35.07_a422394f_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "biti\u015F_0"
+      name: WhatsApp Image 2025-04-18 at 14.35.07_a422394f_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1920
-        height: 1080
+        width: 684
+        height: 567
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 69ebe957d58e23bc0800000000000000
-      internalID: -3804723247071707498
+      spriteID: e31022da9a92342b0800000000000000
+      internalID: -5601587702787866306
       vertices: []
       indices: 
       edges: []
@@ -160,8 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      "biti\u015F_0": -3804723247071707498
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
