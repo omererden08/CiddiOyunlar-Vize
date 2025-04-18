@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1837069552959543218}
   m_Layer: 0
   m_Name: "Pelu\u015F ay\u0131c\u0131k"
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

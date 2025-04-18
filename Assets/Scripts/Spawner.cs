@@ -8,9 +8,11 @@ public class Spawner : MonoBehaviour
     [SerializeField] private GameObject[] spawnableObjects;
     [SerializeField] private float spawnInterval;
     private float timer = 0f;
+    [SerializeField] private AudioSource spawnSound;
 
     private void Start()
     {
+        spawnSound = GetComponent<AudioSource>();
         foreach (Transform child in transform)
         {
             spawnPoints.Add(child);
@@ -31,6 +33,7 @@ public class Spawner : MonoBehaviour
         if (timer >= spawnInterval)
         {
             Spawn();
+            spawnSound.Play();
             timer = 0f; 
         }
     }

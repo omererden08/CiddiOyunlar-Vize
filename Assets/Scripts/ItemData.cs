@@ -7,4 +7,5 @@ public class ItemData : ScriptableObject
 
     public int itemPoints;
 
+
 }

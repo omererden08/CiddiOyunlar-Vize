@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using Unity.VisualScripting;
 
 public class ItemReporter : MonoBehaviour
 {
@@ -10,17 +11,21 @@ public class ItemReporter : MonoBehaviour
 
     [SerializeField] private int scoreToWin;
     [SerializeField] private TextMeshProUGUI Result;
-
+    [SerializeField] private AudioSource endSound;
 
     private void Start()
     {
         Cursor.visible = true;
         if (GameManager.Instance.score >= scoreToWin)
         {
+            endSound = GameObject.Find("Win").GetComponent<AudioSource>();
+            endSound.Play();
             Result.text = "You Win!";
         }
         else
         {
+            endSound = GameObject.Find("Lose").GetComponent<AudioSource>();
+            endSound.Play();
             Result.text = "You Lose!";
         }
 
@@ -32,8 +37,9 @@ public class ItemReporter : MonoBehaviour
             {
                 if (i == j)
                 {
-                    reportText[i].text = " x " + allItems[i].counter;
-
+                    reportText[i].text = allItems[i].itemPoints + " x " + allItems[i].counter;
+                    reportText[i].outlineColor = new Color(0, 0, 0, 1);
+                    reportText[i].outlineWidth = 0.5f;
                 }
 
             }
